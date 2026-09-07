@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">魔术扑克</string>
+    <string name="btn_voice_start">开启语音</string>
+    <string name="btn_voice_stop">停止语音</string>
+    <string name="btn_voice_listening">聆听中…</string>
+    <string name="btn_upload_card">上传扑克图片</string>
+    <string name="msg_card_ready">扑克图片已就绪，请开启语音说【确定】</string>
+    <string name="msg_magic_activated">扑克牌已就位，黑色蒙版已覆盖，请开始手指涂抹擦除！</string>
+    <string name="msg_please_upload_first">请先上传一张扑克牌照片</string>
+    <string name="msg_permission_mic_needed">需要麦克风录音权限以识别魔术指令【确定】</string>
+    <string name="msg_speech_not_available">当前设备未检测到系统语音识别引擎</string>
+</resources>

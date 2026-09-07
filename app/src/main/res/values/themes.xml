@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 极简纯黑沉浸式魔术主题 -->
+    <style name="Theme.MagicCardPerformance" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/magic_black</item>
+        <item name="android:statusBarColor">@color/magic_black</item>
+        <item name="android:navigationBarColor">@color/magic_black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

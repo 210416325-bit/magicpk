@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/magic_black"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <!-- 底层涂抹擦除 View：底层展示扑克牌，顶层覆盖全黑蒙版，支持手指圆角平滑笔刷擦除 -->
+    <com.magic.carderase.EraseView
+        android:id="@+id/eraseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 右上角魔术控制按钮区：极简半透明，适合暗黑舞台隐蔽操作 -->
+    <LinearLayout
+        android:id="@+id/topControlLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <!-- 开启语音按钮 -->
+        <TextView
+            android:id="@+id/btnVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_magic_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="@string/btn_voice_start"
+            android:textColor="@color/magic_text_light"
+            android:textSize="13sp" />
+
+        <!-- 上传扑克图片按钮 -->
+        <TextView
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_magic_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="@string/btn_upload_card"
+            android:textColor="@color/magic_text_light"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 隐蔽状态反馈指示器（魔术就绪时，右上角出现微弱小光点，给魔术师视觉确认） -->
+    <View
+        android:id="@+id/indicatorReady"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:background="#3300E676" />
+
+</FrameLayout>
