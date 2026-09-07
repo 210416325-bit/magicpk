@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全黑魔术舞台背景 -->
+    <color name="magic_black">#000000</color>
+    <!-- 极简半透明按钮背景：隐蔽不抢眼，适合魔术暗中操作 -->
+    <color name="magic_btn_bg">#33FFFFFF</color>
+    <color name="magic_btn_bg_active">#6600E676</color>
+    <color name="magic_btn_stroke">#4DFFFFFF</color>
+    <color name="magic_text_light">#E0E0E0</color>
+    <color name="magic_text_highlight">#00E676</color>
+</resources>
